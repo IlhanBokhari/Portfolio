@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilhan Bokhari | Software & Cyber Security Portfolio</title>
+<meta name="description" content="Portfolio of Ilhan Bokhari, Computer Science student at Sheffield Hallam University focused on software engineering and cyber security.">
+<style>
+  :root{--bg:#0b1020;--card:#141b34;--text:#e6e9f5;--muted:#9aa4c7;--accent:#4fd1c5;--accent2:#7c8cff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  nav{position:sticky;top:0;background:rgba(11,16,32,.9);backdrop-filter:blur(8px);border-bottom:1px solid #1f2850;z-index:10}
+  nav .in{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;flex-wrap:wrap;gap:8px}
+  nav strong{color:var(--text)}
+  nav ul{display:flex;gap:18px;list-style:none;flex-wrap:wrap}
+  section{max-width:1000px;margin:auto;padding:60px 20px}
+  h2{font-size:1.6rem;margin-bottom:24px}
+  h2::after{content:"";display:block;width:50px;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));margin-top:8px}
+  .hero{padding-top:90px}
+  .hero small{color:var(--accent);letter-spacing:2px;text-transform:uppercase}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:8px 0}
+  .hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);max-width:640px;margin-bottom:24px}
+  .btn{display:inline-block;padding:10px 20px;border-radius:8px;margin:0 8px 8px 0;font-weight:600}
+  .btn.p{background:var(--accent);color:#06121a}
+  .btn.s{border:1px solid var(--accent2);color:var(--text)}
+  .btn:hover{text-decoration:none;opacity:.85}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid #1f2850;border-radius:12px;padding:22px}
+  .card h3{margin-bottom:4px}
+  .meta{color:var(--accent);font-size:.85rem;margin-bottom:10px}
+  .card ul{padding-left:18px;color:var(--muted)}
+  .card li{margin-bottom:6px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .tag{background:#1d2650;color:var(--accent2);padding:3px 10px;border-radius:20px;font-size:.78rem}
+  .timeline .card{margin-bottom:20px}
+  .skills .card h3{margin-bottom:10px}
+  .contact p{color:var(--muted);margin-bottom:14px}
+  footer{text-align:center;color:var(--muted);padding:30px;border-top:1px solid #1f2850;font-size:.85rem}
+</style>
+</head>
+<body>
+
+<nav><div class="in">
+  <strong>Ilhan Bokhari</strong>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<section class="hero">
+  <small>Computer Science Student · Sheffield, UK</small>
+  <h1>Hi, I'm <span>Ilhan Bokhari</span></h1>
+  <p>I build secure, real-world software, from government-facing web portals to Python OCR tools for healthcare data. Looking for a graduate software engineering or cyber security role.</p>
+  <a class="btn p" href="#projects">View my work</a>
+  <a class="btn s" href="#contact">Get in touch</a>
+  <!-- Optional: add your CV PDF to the repo and uncomment -->
+  <!-- <a class="btn s" href="Ilhan-Bokhari-CV.pdf" download>Download CV</a> -->
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p style="color:var(--muted)">I'm a second-year BSc Computer Science student at Sheffield Hallam University. I'm comfortable across the stack, from front-end and databases to applied Python and data security, and I have a strong interest in cyber security. My projects have given me practical experience working with clients, in teams, and with sensitive data.</p>
+  <div class="tags" style="margin-top:18px">
+    <span class="tag">Software Engineering</span>
+    <span class="tag">Cyber Security</span>
+    <span class="tag">Data Science</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>OCR Data Extraction Model</h3>
+      <div class="meta">MEC · Manchester hospital records system</div>
+      <ul>
+        <li>Built a Python OCR model to extract patient and doctor data from documents.</li>
+        <li>Fed extracted data into a secure storage pipeline with encryption protecting sensitive healthcare records.</li>
+        <li>Used Tesseract and OpenCV for text recognition and image preprocessing.</li>
+      </ul>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Tesseract</span><span class="tag">OpenCV</span><span class="tag">Encryption</span></div>
+    </div>
+    <div class="card">
+      <h3>Government Web Portal</h3>
+      <div class="meta">UKHSA · Public-facing web application</div>
+      <ul>
+        <li>Built a public-facing web app for an external government client as part of a team.</li>
+        <li>Contributed to both front-end and back-end functionality.</li>
+        <li>Used GitHub for team version control and joined client requirements and design planning sessions.</li>
+      </ul>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">PostgreSQL</span></div>
+    </div>
+  </div>
+  <p style="margin-top:20px;color:var(--muted)">More code on my <a href="https://github.com/IlhanBokhari" target="_blank" rel="noopener">GitHub</a>.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="card">
+      <h3>Software Developer</h3>
+      <div class="meta">UK Health Security Agency (UKHSA)</div>
+      <ul>
+        <li>Worked in a software development team to design, build and deliver a website for an external government client.</li>
+        <li>Contributed to design decisions and implementation planning in team meetings.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Research Assistant &amp; Software Developer</h3>
+      <div class="meta">MEC (Manchester Emergency Courses)</div>
+      <ul>
+        <li>Developed software to securely capture and store data entered by patients and doctors, including the OCR extraction component.</li>
+        <li>Applied encryption to protect sensitive data throughout the pipeline.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <h3>BSc (Hons) Computer Science</h3>
+    <div class="meta">Sheffield Hallam University · 2025 – Present (Year 2)</div>
+    <p style="color:var(--muted)">Modules: Fundamentals of Mathematics, Computer Architectures, Databases and Web, Programming, Software Projects.</p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">C#</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQL</span></div></div>
+    <div class="card"><h3>Data &amp; ML</h3><div class="tags"><span class="tag">OCR</span><span class="tag">Data extraction</span><span class="tag">Image preprocessing</span></div></div>
+    <div class="card"><h3>Databases &amp; Security</h3><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Data encryption</span><span class="tag">Secure storage</span></div></div>
+    <div class="card"><h3>Tools</h3><div class="tags"><span class="tag">VS Code</span><span class="tag">GitHub</span><span class="tag">Microsoft Office</span></div></div>
+    <div class="card"><h3>Soft skills</h3><div class="tags"><span class="tag">Communication</span><span class="tag">Teamwork</span><span class="tag">Problem solving</span><span class="tag">Time management</span><span class="tag">Analytical thinking</span><span class="tag">Attention to detail</span></div></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>I'm open to graduate software engineering and cyber security opportunities.</p>
+  <a class="btn p" href="mailto:syedilhanhasan@gmail.com">Email me</a>
+  <a class="btn s" href="https://github.com/IlhanBokhari" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn s" href="https://www.linkedin.com/in/ilhan-bokhari-699346253" target="_blank" rel="noopener">LinkedIn</a>
+</section>
+
+<footer>© 2026 Ilhan Bokhari · Sheffield, UK</footer>
+
+</body>
+</html>
